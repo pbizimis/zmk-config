@@ -8,23 +8,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&sk {
-    release-after-ms = <750>;
-    quick-release;
-};
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC>;
 };
 
 #define BASE_L  0
-#define SYM_L   1
-#define NUM_L   2
-#define NAV_L   3
-
-#define CUT   LG(X)
-#define COPY  LG(C)
-#define PASTE LG(V)
 
 #define MEH(KEY) LS(LC(LA(LG(KEY))))
 
