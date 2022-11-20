@@ -15,19 +15,28 @@
 
         default {
             bindings = <
- &kp SEMI  &kp COMMA    &kp DOT           &kp P      &kp Y    &kp F      &kp G   &kp C   &kp R   &kp L
-    &kp A      &kp O      &kp E           &kp U      &kp I    &kp D      &kp H   &kp T   &kp N   &kp S
- &kp APOS      &kp Q      &kp J           &kp K      &kp X    &kp B      &kp M   &kp W   &kp V   &kp Z
-                      &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER  &kp ESC  &kp SPACE   &to 1
+ &kp SEMI  &kp COMMA    &kp DOT           &kp P      &kp Y    &kp F        &kp G   &kp C   &kp R   &kp L
+    &kp A      &kp O      &kp E           &kp U      &kp I    &kp D        &kp H   &kp T   &kp N   &kp S
+ &kp APOS      &kp Q      &kp J           &kp K      &kp X    &kp B        &kp M   &kp W   &kp V   &kp Z
+                      &kp LCTRL  &kp LEFT_SHIFT  &kp ENTER  &kp ESC  &lt 2 SPACE   &to 1
             >;
         };
 
         layer1 {
             bindings = <
-    &kp N1            &kp N2          &kp N3                &kp N4         &kp N5     &kp N6                 &kp N7           &kp N8             &kp N9        &kp N0
-  &kp PLUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp ASTERISK
- &kp TILDE        &kp DOLLAR  &kp UNDERSCORE             &kp MINUS       &kp PIPE     &kp AT              &kp SLASH         &kp HASH        &kp PERCENT      &kp EXCL
-                                      &trans                &trans         &trans     &trans                 &trans            &to 0
+    &kp N1            &kp N2          &kp N3                &kp N4         &kp N5        &kp N6                 &kp N7           &kp N8             &kp N9        &kp N0
+  &kp PLUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND     &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp ASTERISK
+ &kp TILDE        &kp DOLLAR  &kp UNDERSCORE             &kp MINUS       &kp PIPE        &kp AT              &kp SLASH         &kp HASH        &kp PERCENT      &kp EXCL
+                                   &kp LCTRL          &kp LEFT_WIN      &kp ENTER  &kp LEFT_ALT            &lt 2 SPACE            &to 0
+            >;
+        };
+
+        Layer__2 {
+            bindings = <
+ &trans  &trans          &trans         &trans  &trans  &trans          &trans  &trans  &trans  &kp RIGHT_ARROW
+ &trans  &trans          &trans         &trans  &trans  &trans  &kp LEFT_ARROW  &trans  &trans           &trans
+ &trans  &trans  &kp DOWN_ARROW   &kp UP_ARROW  &trans  &trans          &trans  &trans  &trans           &trans
+                  &kp BACKSPACE  &kp BACKSPACE  &trans  &trans          &trans  &trans
             >;
         };
     };
