@@ -24,19 +24,28 @@
 
         layer1 {
             bindings = <
-    &kp N1            &kp N2          &kp N3                &kp N4         &kp N5     &kp N6                 &kp N7           &kp N8             &kp N9        &kp N0
-  &kp PLUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp ASTERISK
- &kp TILDE        &kp DOLLAR  &kp UNDERSCORE             &kp MINUS       &kp PIPE     &kp AT              &kp SLASH         &kp HASH        &kp PERCENT      &kp EXCL
-                                   &kp LCTRL        &kp LEFT_SHIFT   &kp LEFT_WIN      &mo 2              &kp SPACE            &to 0
+        &kp N1            &kp N2          &kp N3                &kp N4         &kp N5     &kp N6                 &kp N7           &kp N8             &kp N9        &kp N0
+      &kp PLUS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp ASTERISK
+ &kp BACKSLASH          &kp PIPE       &kp MINUS             &kp TILDE     &kp DOLLAR     &kp AT              &kp SLASH  &kp EXCLAMATION        &kp PERCENT      &kp HASH
+                                       &kp LCTRL        &kp LEFT_SHIFT   &kp LEFT_WIN      &mo 2                  &mo 3            &to 0
             >;
         };
 
         Layer__2 {
             bindings = <
  &trans        &trans          &trans         &trans        &trans  &trans          &trans  &trans  &trans  &kp RIGHT_ARROW
- &trans  &sk LEFT_ALT       &kp ENTER        &kp ESC        &trans  &trans  &kp LEFT_ARROW  &trans  &trans           &trans
+ &trans  &sk LEFT_ALT         &kp TAB      &kp ENTER        &trans  &trans  &kp LEFT_ARROW  &trans  &trans           &trans
  &trans        &trans  &kp DOWN_ARROW   &kp UP_ARROW        &trans  &trans          &trans  &trans  &trans           &trans
-                              &kp TAB  &kp BACKSPACE  &kp LEFT_WIN  &trans          &trans  &trans
+                              &kp ESC  &kp BACKSPACE  &kp LEFT_WIN  &trans          &trans  &trans
+            >;
+        };
+
+        Layer__3 {
+            bindings = <
+ &trans  &trans  &trans     &trans  &trans  &trans     &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &kp CARET  &trans  &trans  &kp GRAVE  &trans  &trans  &trans
+ &trans  &trans  &trans     &trans  &trans  &trans     &trans  &trans  &trans  &trans
+                 &trans     &trans  &trans  &trans     &trans  &trans
             >;
         };
     };
