@@ -33,10 +33,10 @@
 
         Layer__2 {
             bindings = <
-     &trans        &trans          &trans         &trans        &trans  &trans          &trans     &trans     &trans  &kp RIGHT_ARROW
- &kp DOLLAR  &sk LEFT_ALT         &kp TAB      &kp ENTER        &trans  &trans  &kp LEFT_ARROW  &kp TILDE  &kp SLASH           &kp AT
-     &trans        &trans  &kp DOWN_ARROW   &kp UP_ARROW        &trans  &trans          &trans     &trans     &trans           &trans
-                                  &kp ESC  &kp BACKSPACE  &kp LEFT_WIN  &trans          &trans     &trans
+   &trans   &trans          &trans         &trans        &trans  &trans          &trans     &trans     &trans  &kp RIGHT_ARROW
+ &kp LALT  &sk TAB         &kp ESC      &kp ENTER        &trans  &trans  &kp LEFT_ARROW  &kp TILDE  &kp SLASH           &kp AT
+   &trans   &trans  &kp DOWN_ARROW   &kp UP_ARROW        &trans  &trans      &kp DOLLAR     &trans     &trans           &trans
+                         &kp LCTRL  &kp BACKSPACE  &kp LEFT_WIN  &trans          &trans     &trans
             >;
         };
     };
