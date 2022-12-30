@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define BASE_L  0
 
@@ -33,10 +34,19 @@
 
         Layer__2 {
             bindings = <
-   &trans   &trans          &trans         &trans        &trans  &trans          &trans     &trans     &trans  &kp RIGHT_ARROW
+    &to 3   &trans          &trans         &trans        &trans  &trans          &trans     &trans     &trans  &kp RIGHT_ARROW
  &sk LALT  &kp TAB         &kp ESC      &kp ENTER        &trans  &trans  &kp LEFT_ARROW  &kp TILDE  &kp SLASH           &kp AT
    &trans   &trans  &kp DOWN_ARROW   &kp UP_ARROW        &trans  &trans      &kp DOLLAR     &trans     &trans           &trans
                          &kp LCTRL  &kp BACKSPACE  &kp LEFT_WIN  &trans          &trans     &trans
+            >;
+        };
+
+        Layer__3 {
+            bindings = <
+     &kp F1      &kp F2      &kp F3        &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+ &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &bt BT_SEL 0   &none  &trans  &trans  &trans  &trans   &trans
+     &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                             &trans        &trans  &trans  &trans  &trans   &to 0
             >;
         };
     };
