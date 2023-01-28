@@ -34,7 +34,7 @@
 
         Layer__2 {
             bindings = <
-    &to 3   &trans          &trans         &trans        &trans  &trans          &trans     &trans     &trans  &kp RIGHT_ARROW
+    &to 3    &to 4          &trans         &trans        &trans  &trans          &trans     &trans     &trans  &kp RIGHT_ARROW
  &sk LALT  &kp TAB         &kp ESC      &kp ENTER        &trans  &trans  &kp LEFT_ARROW  &kp TILDE  &kp SLASH           &kp AT
    &trans   &trans  &kp DOWN_ARROW   &kp UP_ARROW        &trans  &trans      &kp DOLLAR     &trans     &trans           &trans
                          &kp LCTRL  &kp BACKSPACE  &kp LEFT_WIN  &trans          &trans     &trans
@@ -47,6 +47,15 @@
  &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &bt BT_SEL 0   &none  &trans  &trans  &trans  &trans   &trans
      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans   &trans
                              &trans        &trans  &trans  &trans  &trans   &to 0
+            >;
+        };
+
+        Layer__4 {
+            bindings = <
+     &kp B   &kp X      &kp P      &kp M   &kp G  &trans  &trans  &trans  &trans  &trans
+   &kp TAB   &kp Q      &kp W      &kp E   &kp R  &trans  &trans  &trans  &trans  &trans
+ &kp LSHFT   &kp A      &kp S      &kp D   &kp F  &trans  &trans  &trans  &trans  &trans
+                    &kp LCTRL  &kp SPACE   &kp C  &trans  &trans   &to 0
             >;
         };
     };
